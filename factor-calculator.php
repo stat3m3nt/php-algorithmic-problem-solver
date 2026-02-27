@@ -8,8 +8,8 @@
  * to find the factors of that integer. We know a number can only have a maximum value 
  * of half its value, thus we only check for possible factors from 1 up to input/2
  * @author Andrew Evboifo
- * @version 20260207.00
- * @package COMP 10260 Assignment 1
+ * @package PHP-Algorithmic-Problem-Solver
+ * Last-Updated: 2026-02-07
  */
 
 
@@ -39,10 +39,11 @@ if(ctype_digit($num)){
     }
 
     $factors[] = $int; // adds the number itself as a factor
+    echo "Factors of $int are: <br>";
     echo "<ol>";
 
     foreach($factors as $factor){
-        echo "<li>"$factor"</li>";
+        echo "<li>$factor</li>";
     }
 
     echo "</ol>";

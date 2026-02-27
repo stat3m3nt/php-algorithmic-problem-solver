@@ -1,19 +1,15 @@
 <?php
-
 /**
- * I Andrew Evboifo, 000909727, certify that this material is my original work. 
- * No other person's work has been used without suitable acknowledgment and 
- * I have not made my work available to anyone else.
- * 
- * PHP code finds Erdos-Woods NUmbers within a given range. It does so by validating 
+ *
+ * PHP code finds Erdos-Woods Numbers within a given range. It does so by validating 
  * that the appropriate start and end inputs are present. We know a number can only 
  * have a max possible factor of 100/2 since our range is 1-100, thus we check against
  * the first 15 numbers in our filtered array until a non divisible number/(s) are found
  * and displayed as html lists
  * 
  * @author Andrew Evboifo
- * @version 20260207.00
- * @package COMP 10260 Assignment 1
+ * @package PHP-Algorithmic-Problem-Solver
+ * Last-Updated: 2026-02-07
  */
 
 if(!isset($_POST['start'])){

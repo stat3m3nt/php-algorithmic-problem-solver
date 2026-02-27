@@ -9,20 +9,20 @@ function loadMe () {
       .then( txt => out.innerHTML = txt );
 }
 
-function q1GO() {
+function runMarchingAnts() {
     let input = document.querySelector("#q1in").value;
     let out = document.querySelector("#q1out");
-    let params = "ants=" + input;
-    fetch("a1q1.php?"+params)
+    let params = "ants=" + encodeURIComponent(input);
+    fetch("marching-ants.php?"+params)
       .then(resp => resp.text() )
       .then( txt => out.innerHTML = txt );
 }
 
-function q2_1GO() {
+function runFactorCalculator() {
     let input = document.querySelector("#q2-1in").value;
     let out = document.querySelector("#q2-1out");
-    let params = "n=" + input;
-    fetch("a1q2-1.php", {
+    let params = "n=" + encodeURIComponent(input);
+    fetch("factor-calculator.php", {
         method: "POST",
         headers: {
             'Content-Type': 'application/x-www-form-urlencoded'
@@ -33,12 +33,12 @@ function q2_1GO() {
       .then( txt => out.innerHTML = txt );
 }
 
-function q2_2GO() {
+function runErdosWoods() {
     let in1 = document.querySelector("#q2-2in1").value;
     let in2 = document.querySelector("#q2-2in2").value;
     let out = document.querySelector("#q2-2out");
-    let params = "start=" + in1 + "&end=" + in2;
-    fetch("a1q2-2.php", {
+    let params = "start=" + encodeURIComponent(in1) + "&end=" + encodeURIComponent(in2);
+    fetch("erdos-woods.php", {
         method: "POST",
         headers: {
             'Content-Type': 'application/x-www-form-urlencoded'

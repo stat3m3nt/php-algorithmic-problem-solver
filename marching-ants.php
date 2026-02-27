@@ -11,8 +11,8 @@
  * a stored array if so, proceeds identify and eliminate "BR" pairs.
  * 
  * @author Andrew Evboifo
- * @version 20260207.00
- * @package COMP 10260 Assignment 1
+ * @package PHP-Algorithmic-Problem-Solver
+ * Last-Updated: 2026-02-07
  */
 
 // initiliazers to count surviving ants
